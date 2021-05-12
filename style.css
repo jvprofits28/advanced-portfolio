@@ -1,95 +1,67 @@
-*{
-    margin:0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
-:root{
+:root {
+}
+header {
+  background-color: rgb(168, 168, 168);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  color: black;
+  background-color: aqua;
+  padding: 10px 10px 10px 40px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+h2 {
+  display: flex;
+  font-size: 40px;
+  border-right: solid aqua;
+  width: 25%;
+  margin: 20px;
+}
+p {
+  display: flex;
+  justify-content: flex-end;
+}
 
-}
-header{
-    background-color:rgb(168, 168, 168);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-h1{
-    display: flex;
-    justify-content: center;
-    color: black;
-    background-color: aqua;
-    padding: 10px 10px 10px 40px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius:30px ;
-}
-/*navagation bar begins here*/
-header a{
-    text-decoration: none;
-    color: aqua;
-    padding: 5px 5px 5px 5px;
-    border:2px solid aqua
+/*nav bar begins here*/
+header a {
+  text-decoration: none;
+  color: aqua;
+  padding: 5px 5px 5px 5px;
+  border: 2px solid aqua;
 }
 
 header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:flex-end;
-    list-style: none;
-    font-size: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  list-style: none;
+  font-size: 25px;
 }
-.nav-effects a:hover{/* i had to reference w3school for hover effects*/
-    color:blue;
-    text-shadow:2px 2px 20px blue;
+.nav-effects a:hover {
+  /* i had to reference w3school for hover effects*/
+  color: blue;
+  text-shadow: 2px 2px 20px blue;
 }
-/*image cover backgound*/
-.seattle{
-    height: 280px;
-    background-image:url("./images/seattleBack.jpg");
-    background-size: cover;
-    background-attachment: scroll;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    display:flex;
-    justify-content: flex-start;
-    flex: wrap;
-    flex-direction: row;
+/*image cover background*/
+.seattle {
+  height: 280px;
+  background-image: url("./images/seattleBack.jpg");
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: 50%;
+  background-repeat: no-repeat;
 }
 /*sections for about me begins here*/
-.body{
-    background-color: #dfe6e9;
+.body {
+  background-color: #dfe6e9;
 }
-.about-me{
-    font-size: 40px;
-    padding-left: 10px;
-    border-right: 3px solid aqua;
-}
-.p-about-me{
-    font-size: 20px;
-    padding-left: 10px;
-}
-.about-me-grid-container{
-display: grid;
-width: 70%;
-height: 10%;
-grid-template-columns: 1fr repeat(1, 3fr);
-grid-template-rows: repeat(2,1fr);
-}
-/* Projects section begins here*/
-.project-grid-container{
-    display: grid;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows: repeat(8,5vw);
-    grid-gap: 15px;
-}
-.projects{
-    font-size: 40px;
-    padding-left: 10px;
-    border-right: 3px solid aqua;
-}
-
-#horinseon{
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-}
-
-/*contact me footer begins here*/

@@ -1,0 +1,43 @@
+.body {
+  background-color: #dfe6e9;
+}
+.about-me {
+  font-size: 40px;
+  padding-left: 10px;
+  border-right: 3px solid aqua;
+}
+.p-about-me {
+  font-size: 20px;
+  padding-left: 10px;
+}
+.about-me-grid-container {
+  display: grid;
+  width: 70%;
+  height: 10%;
+  grid-template-columns: 1fr repeat(1, 3fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+/* Projects section begins here*/
+.project-grid-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 15px;
+}
+.projects {
+  font-size: 40px;
+  padding-left: 10px;
+  border-right: 3px solid aqua;
+}
+
+#horinseon {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+/*contact me footer begins here*/
+.contact-container {
+  display: flex;
+  width: 70%;
+}
