@@ -6,14 +6,30 @@
 }
 
 :root {
-  --primary-color: #404b65;
-  --secondary-color: #97bec6;
-  --tertiary-color: #96c7c9;
+  --primary-color: #434444;
+  --secondary-color: #00d5ff;
+  --tertiary-color: #ffffff;
 }
+
 body {
   background-color: #ebebf4;
 }
-/* header a nav bar begins */
+
+/* Utility */
+
+section {
+  padding: 3%;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Utility End */
+
+/* Header */
+
 header {
   padding: 20px 35px;
   background-color: var(--primary-color);
@@ -61,42 +77,15 @@ header nav ul li a:hover {
   color: var(--primary-color);
   font-weight: 500;
 }
-header {
-  display: block;
-}
 
-header h1 {
-  font-size: 5vw;
-  width: 100%;
-  left: 0px;
-  text-align: center;
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  padding: 10px;
-  margin-bottom: 10px;
-}
-header nav ul {
-  display: block;
-  text-align: center;
-}
-header nav ul li {
-  width: 100%;
-  margin: 25px 0px 25px 0px;
-}
-header nav ul li a {
-  width: 100%;
-  padding: 5px;
-  font-weight: normal;
-  font-size: 4vw;
-  color: var(--secondary-color);
-  border-bottom: 2px solid;
-}
-/* nav ends here */
+/* Hero Style Start */
+
 .hero {
-  height: 20vw;
+  height: 300px;
   background-image: url("./images/seattleBack.jpg");
   background-size: cover;
   background-attachment: scroll;
+  background-position: center;
   position: relative;
 }
 
@@ -110,4 +99,135 @@ header nav ul li a {
   right: 5%;
   bottom: 5%;
   text-align: center;
+}
+
+/* Hero Style end */
+
+.content {
+  width: 80vw;
+  margin: auto;
+  position: relative;
+}
+
+.section-title {
+  color: var(--primary-color);
+  margin-right: 2%;
+  padding-right: 2%;
+  border-right: 2px solid;
+  text-align: right;
+  position: relative;
+  width: 10%;
+}
+
+.content-right {
+  width: 90%;
+}
+
+/* About Section */
+
+.about p {
+  margin: 1vw;
+}
+
+/* About Section End */
+
+/* Contact */
+
+nav.footer {
+  margin: 0px 15px;
+}
+
+nav.footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+nav.footer ul li a {
+  margin: 5px 10px;
+  padding: 5px;
+  font-weight: lighter;
+  font-size: 1.1vw;
+  text-decoration: none;
+  color: var(--primary-color);
+  border-bottom: 2px solid;
+  border-color: var(--primary-color);
+}
+
+nav.footer ul li a:hover {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+/* Contact End */
+
+@media only screen and (max-width: 768px) {
+  .content {
+    width: 100%;
+  }
+  .flex-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section-title {
+    border: none;
+    margin: auto;
+    margin-bottom: 2vw;
+    text-align: center;
+    width: 100%;
+    font-size: 3.5vw;
+  }
+
+  .contact {
+    position: relative;
+    bottom: 0;
+  }
+  header {
+    display: block;
+  }
+  header a {
+    text-decoration: none;
+  }
+  header h1 {
+    font-size: 5vw;
+    width: 100%;
+    left: 0px;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  header nav ul {
+    display: block;
+    text-align: center;
+  }
+  header nav ul li {
+    width: 100%;
+    margin: 25px 0px 25px 0px;
+  }
+  header nav ul li a {
+    width: 100%;
+    padding: 5px;
+    font-weight: normal;
+    font-size: 4vw;
+    color: var(--secondary-color);
+    border-bottom: 2px solid;
+  }
+  .hero {
+    display: none;
+  }
+  nav.footer ul {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  nav.footer ul li {
+    margin-top: 2vw;
+  }
+  nav.footer ul li a {
+    font-size: 3vw;
+  }
 }
