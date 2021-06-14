@@ -10,6 +10,10 @@
   --secondary-color: #97bec6;
   --tertiary-color: #96c7c9;
 }
+body {
+  background-color: #ebebf4;
+}
+/* header a nav bar begins */
 header {
   padding: 20px 35px;
   background-color: var(--primary-color);
@@ -60,9 +64,7 @@ header nav ul li a:hover {
 header {
   display: block;
 }
-header a {
-  text-decoration: none;
-}
+
 header h1 {
   font-size: 5vw;
   width: 100%;
@@ -88,4 +90,24 @@ header nav ul li a {
   font-size: 4vw;
   color: var(--secondary-color);
   border-bottom: 2px solid;
+}
+/* nav ends here */
+.hero {
+  height: 20vw;
+  background-image: url("./images/seattleBack.jpg");
+  background-size: cover;
+  background-attachment: scroll;
+  position: relative;
+}
+
+.hero-subtitle {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-size: 1.5vw;
+  padding: 1% 3%;
+  margin: auto auto;
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  text-align: center;
 }
