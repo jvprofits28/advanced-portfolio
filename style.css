@@ -130,9 +130,99 @@ header nav ul li a:hover {
 }
 
 /* About Section End */
+.grid-container {
+  display: grid;
+  grid-template-columns: fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 15px 15px;
+  grid-template-areas: "featured featured featured featured password password" "featured featured featured featured horiseon horiseon" "subster subster react-portfolio react-portfolio . .";
+  height: 40vw;
+}
 
+.grid-item {
+  border: 5px solid;
+  border-color: var(--tertiary-color);
+  position: relative;
+}
+
+.grid-item a {
+  color: var(--black);
+}
+
+.grid-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 15px;
+  align-items: flex-end;
+  position: relative;
+  top: 0x;
+  left: 0px;
+  overflow: hidden;
+}
+
+.grid-img::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: var(--tertiary-color);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0.3;
+  transition: 0.5s;
+}
+
+.grid-item:hover .grid-img::after {
+  opacity: 0;
+}
+
+.grid-subtitle {
+  background-color: var(--tertiary-color);
+  position: absolute;
+  left: 0;
+  bottom: 1vw;
+  padding: 0.25vw;
+}
+
+.grid-subtitle h4 {
+  text-align: left;
+  margin-left: 0.2vw;
+  margin-bottom: 0.1vw;
+}
+
+.grid-subtitle p {
+  text-align: left;
+  padding: 0px;
+  margin-left: 0.2vw;
+  margin-top: 0.1vw;
+}
+.featured {
+  grid-area: featured;
+  background-image: url("./images/vaccineFinder.png");
+  background-size: cover;
+  background-position: top left;
+}
+.subster {
+  grid-area: subster;
+  background-image: url("images/Subster.png");
+  background-size: cover;
+  background-position: top left;
+}
+.password {
+  grid-area: password;
+  background-image: url("images/passwordGenerator.png");
+  background-size: cover;
+  background-position: top left;
+}
+.horiseon {
+  grid-area: horiseon;
+  background-image: url("images/HoriseonMarketing.jpg");
+  background-size: cover;
+  background-position: top left;
+}
+/*TODO: need to add my react portfolio  */
 /* Contact */
-
 nav.footer {
   margin: 0px 15px;
 }
@@ -179,7 +269,26 @@ nav.footer ul li a:hover {
     width: 100%;
     font-size: 3.5vw;
   }
-
+  .grid-container {
+    display: block;
+    grid-template-columns: fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px;
+    grid-template-areas: "featured featured featured featured password password" "featured featured featured featured horiseon horiseon" "subster subster react-portfolio react-portfolio . .";
+    width: 100%;
+    height: 100%;
+  }
+  .grid-item {
+    min-height: 40vw;
+    margin: 2vw auto;
+  }
+  .grid-img {
+    min-height: 40vw;
+  }
+  .contact {
+    position: relative;
+    bottom: 0;
+  }
   .contact {
     position: relative;
     bottom: 0;
