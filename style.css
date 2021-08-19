@@ -100,6 +100,16 @@ header nav ul li a:hover {
   bottom: 5%;
   text-align: center;
 }
+span.headshot {
+  position: absolute;
+  margin: 3% 3%;
+  display: flex;
+}
+
+#headshotimg {
+  border-radius: 15rem;
+  width: 15%;
+}
 
 /* Hero Style end */
 
@@ -252,6 +262,11 @@ nav.footer ul li a:hover {
 }
 
 /* Contact End */
+@media only screen and (max-width: 900px) {
+  span.headshot {
+    margin: 5%;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .content {
