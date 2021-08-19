@@ -106,7 +106,7 @@ span.headshot {
   display: flex;
 }
 
-#headshotimg {
+#pic {
   border-radius: 15rem;
   width: 15%;
 }
@@ -231,7 +231,7 @@ span.headshot {
   background-size: cover;
   background-position: top left;
 }
-/*TODO: need to add my react portfolio  */
+
 /* Contact */
 nav.footer {
   margin: 0px 15px;
