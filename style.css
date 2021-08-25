@@ -142,7 +142,6 @@ span.headshot {
 /* About Section End */
 .grid-container {
   display: grid;
-  grid-template-columns: fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   gap: 15px 15px;
   grid-template-areas: "featured featured featured featured password password" "featured featured featured featured horiseon horiseon" "subster subster react-portfolio react-portfolio . .";
